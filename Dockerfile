@@ -1,5 +1,9 @@
 FROM python:3.11-bullseye
 
+COPY requirements.txt .
+
 RUN pip install -r requirements.txt
 
-RUN ["python", "app.py"]
+COPY . .
+
+CMD ["python", "app.py"]
