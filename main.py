@@ -24,7 +24,7 @@ def main():
                 if LIVE:
                     s.send(f"PRIVMSG #{CHANNEL} :{message}\n".encode())
                 print(f"Sent: {message}")
-                time.sleep(10.25)
+                time.sleep(10.1)
 
         s.close()
         print("Restarting...")
